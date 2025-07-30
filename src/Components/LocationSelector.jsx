@@ -31,7 +31,8 @@ const LocationSelector = () => {
       if (selectedCountry) {
         try {
           const res = await axios.get(
-            `https://crio-location-selector.onrender.com/country=${selectedCountry}/states`
+            `https://crio-location-selector.onrender.com/countries/${selectedCountry}/states`
+
           );
           setStates(res.data);
           setSelectedState("");
@@ -51,7 +52,8 @@ const LocationSelector = () => {
       if (selectedCountry && selectedState) {
         try {
           const res = await axios.get(
-            `https://crio-location-selector.onrender.com/country=${selectedCountry}/state=${selectedState}/cities`
+            `https://crio-location-selector.onrender.com/countries/${selectedCountry}/states/${selectedState}/cities`
+
           );
           setCities(res.data);
           setSelectedCity("");
