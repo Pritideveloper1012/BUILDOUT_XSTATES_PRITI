@@ -1,6 +1,6 @@
 
 import './App.css'
-import LocationSelector from './Components/LocationSelector'
+import CitySelector from './Components/CitySelector'
 
 function App() {
   
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className='App'>
-        <LocationSelector />
+        <CitySelector />
         
       </div>
      
