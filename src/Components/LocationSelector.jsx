@@ -21,7 +21,7 @@ const LocationSelector = () => {
             console.error("error",e)
         })
     },[])
-     
+    
     /* Fetch states when changes country */
      useEffect(()=>{
         if(selectedCountry){
@@ -102,7 +102,8 @@ const LocationSelector = () => {
 
            <div>
            {selectedCountry && selectedState && selectedCity && (
-            <p>You selected {selectedCity}, {selectedState}, {selectedCountry}</p>
+            <span>You selected {selectedCity}, {selectedState}, {selectedCountry}</span>
+
             )}
             </div>
         </div>
