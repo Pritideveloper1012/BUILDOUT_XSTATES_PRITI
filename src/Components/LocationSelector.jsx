@@ -143,15 +143,8 @@ const LocationSelector = () => {
 
       {/* Final text */}
       {selectedCountry && selectedState && selectedCity && (
-       <div style={{ textAlign:"center", marginTop: "20px" }}>
-      <h2 style={{ display: "inline", marginRight: "8px", textAlign:"center"}}>
-      You selected {selectedCity}
-    </h2>
-    <span>
-      {selectedState}, {selectedCountry}
-    </span>
-  </div>
-)}
+            <p>You selected {selectedCity}, {selectedState}, {selectedCountry}</p>
+            )}
     </div>
     </>
   );
