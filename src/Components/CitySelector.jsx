@@ -111,7 +111,8 @@ const CitySelector = () => {
 
       <div>
            {selectedCountry && selectedState && selectedCity && (
-            <p>You selected {selectedCity}, {selectedState}, {selectedCountry}</p>
+            <span>You selected {selectedCity}, {selectedState}, {selectedCountry}</span>
+
             )}
        </div>
 
