@@ -64,7 +64,7 @@ const LocationSelector = () => {
   }, [selectedCountry, selectedState]);
 
   return (
-    <>
+    
     <div
       style={{
         padding: "2rem",
@@ -143,10 +143,11 @@ const LocationSelector = () => {
 
       {/* Final text */}
       {selectedCountry && selectedState && selectedCity && (
-            <p>You selected {selectedCity}, {selectedState}, {selectedCountry}</p>
-            )}
+     <span>You selected {selectedCity}, {selectedState}, {selectedCountry}</span>
+      )}
+
     </div>
-    </>
+   
   );
 };
 
