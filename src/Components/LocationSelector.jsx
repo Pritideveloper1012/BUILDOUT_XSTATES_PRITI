@@ -142,18 +142,13 @@ const LocationSelector = () => {
       </div>
 
       {/* Final text */}
-    {selectedCountry && selectedState && selectedCity && (
-  <span data-testid="selection-result">
-    You selected {selectedCity}, {selectedState}, {selectedCountry}
-  </span>
-)}
+      <div>
+           {selectedCountry && selectedState && selectedCity && (
+            <p>You selected {selectedCity}, {selectedState}, {selectedCountry}</p>
+            )}
+            </div>
 
-
-
-
-
-
-    </div>
+     </div>
     </>
   );
 };
