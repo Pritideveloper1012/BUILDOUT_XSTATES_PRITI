@@ -54,7 +54,7 @@ const CitySelector = () => {
       };
       fetchCities();
     }
-  }, [selectedState]);
+  }, [selectedCountry,selectedState]);
 
   // Handlers
   const handleCountryChange = (e) => {
@@ -109,12 +109,12 @@ const CitySelector = () => {
         </select>
       </div>
 
-      {/* ✅ Show selected location */}
-      {selectedCountry && selectedState && selectedCity && (
-        <p>
-          <strong>Selected Location:</strong> {selectedCountry}, {selectedState}, {selectedCity}
-        </p>
-      )}
+      <div>
+           {selectedCountry && selectedState && selectedCity && (
+            <p>You selected {selectedCity}, {selectedState}, {selectedCountry}</p>
+            )}
+       </div>
+
     </div>
   );
 };
