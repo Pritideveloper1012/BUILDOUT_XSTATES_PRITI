@@ -142,11 +142,12 @@ const LocationSelector = () => {
       </div>
 
       {/* Final text */}
-    {selectedCity && selectedState && selectedCountry && (
-  <span>
+    {selectedCountry && selectedState && selectedCity && (
+  <p>
     You selected {selectedCity}, {selectedState}, {selectedCountry}
-  </span>
+  </p>
 )}
+
 
 
 
