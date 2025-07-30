@@ -23,7 +23,7 @@ const LocationSelector = () => {
     },[])
      
     /* Fetch states when changes country */
-    useEffect(()=>{
+     useEffect(()=>{
         if(selectedCountry){
         axios.get(`https://crio-location-selector.onrender.com/country=${selectedCountry}/states`)
         .then((res)=>{
@@ -39,8 +39,8 @@ const LocationSelector = () => {
     }
     },[selectedCountry])
 
-    /* Fetch cities when changes state */
-    useEffect(()=>{
+    /* Fetch states when changes country */
+     useEffect(()=>{
         if(selectedCountry && selectedState){
         axios.get(`https://crio-location-selector.onrender.com/country=${selectedCountry}/state=${selectedState}/cities`)
         .then((res)=>{
